@@ -1,0 +1,23 @@
+function setup() {
+  createCanvas(400, 400);
+  
+}
+
+function draw() {
+  background(51);
+translate(width / 2, height / 2);
+  
+ for (var a = 0; a < TWO_PI; a += 0.001) {
+	 var r = 200 * cos(100 * a);
+	 var x = r * cos(a);
+	 var y = r * sin(a);
+	 var z = Math.ceil(Math.random() * 255)
+	 var zz = Math.ceil(Math.random() * 255)
+	 var zzz = Math.ceil(Math.random() * 255)
+	 stroke(z,zz,zzz)
+	 strokeWeight(2);
+	 point(x, y);
+ }
+  
+ 
+}
